@@ -1,0 +1,16 @@
+numpy
+pandas
+pylint
+black
+pytest
+pytest-cov
+
+flask
+requests
+
+python-dotenv
+grpcio-tools
+#protos folder
+#   users.proto
+
+grpcio
