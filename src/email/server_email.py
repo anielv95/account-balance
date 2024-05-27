@@ -20,7 +20,7 @@ def send_email(data):
     password = str(os.environ["PASS"])  
 
     message = MIMEMultipart("alternative")
-    message["Subject"] = "multipart test. s9th test"
+    message["Subject"] = "multipart test. 15th test"
     message["From"] = username
     message["To"] = to
 

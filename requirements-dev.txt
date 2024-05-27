@@ -9,8 +9,6 @@ flask
 requests
 
 python-dotenv
-grpcio-tools
-#protos folder
-#   users.proto
-
 grpcio
+grpcio-tools
+protobuf

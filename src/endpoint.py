@@ -1,7 +1,17 @@
+from __future__ import print_function
+
 from flask import Flask
 from flask import request
 from flask import jsonify
 import processing as p
+
+
+
+#import logging
+
+import grpc
+import email_pb2
+import email_pb2_grpc
 
 app = Flask("processing")
 
@@ -11,8 +21,14 @@ def predict():
     customer = request.get_json()
 
     result = p.calculate_values(customer["account"], customer["email"], customer["df"])
+    result["September"] = "13"
 
-    return jsonify(result)
+    with grpc.insecure_channel("localhost:50051") as channel:
+        stub = email_pb2_grpc.GreeterStub(channel)
+        response = stub.SayHello(email_pb2.HelloRequest(data=result))
+        print(response.output)
+
+    return jsonify({"status":"it works!"})
 
 
 if __name__ == "__main__":
