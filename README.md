@@ -45,11 +45,11 @@ For linux users:
 
     1. source .account-balance/bin/activate
 
-7. Install dependencies to test the functionalities:
+7. Install dependencies to test the functionalities.
 
     1. pip install -r requirements.txt
 
-8. Test the functionalities:
+8. Test the functionalities.
 
     1. python src/test-endpoint.py
 
