@@ -35,6 +35,21 @@ Execute:
     1. cd ../..
     2. docker-compose up
 
+6. Open other terminal and depending on your Operating System you will need to execute:
 
+For windows users:
 
+.account-balance/Scripts/Activate
+
+For linux users:
+
+source .account-balance/bin/activate
+
+7. Install dependencies to test the functionalities:
+
+pip install -r requirements.txt
+
+8. Test the functionalities:
+
+python src/test-endpoint.py
 
