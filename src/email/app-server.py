@@ -1,5 +1,5 @@
 from concurrent import futures
-#import logging
+import logging
 
 import grpc
 import email_pb2
