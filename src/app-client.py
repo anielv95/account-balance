@@ -15,7 +15,7 @@
 
 from __future__ import print_function
 
-#import logging
+# import logging
 
 import grpc
 import email_pb2
@@ -29,7 +29,19 @@ def run():
     print("Will try to greet world ...")
     with grpc.insecure_channel("localhost:50051") as channel:
         stub = email_pb2_grpc.GreeterStub(channel)
-        response = stub.SayHello(email_pb2.HelloRequest(data={'August': "24", 'September': "98", 'account': 'aab43a27-48b2-4249-954e-a2629220ff11', 'credit': "57.64", 'debit': "-51.27", 'email': 'anielvillegas@gmail.com', 'total': "-558.54"}))
+        response = stub.SayHello(
+            email_pb2.HelloRequest(
+                data={
+                    "August": "24",
+                    "September": "98",
+                    "account": "aab43a27-48b2-4249-954e-a2629220ff11",
+                    "credit": "57.64",
+                    "debit": "-51.27",
+                    "email": "anielvillegas@gmail.com",
+                    "total": "-558.54",
+                }
+            )
+        )
         print(response.output)
 
         # response = stub.SayHelloAgain(email_pb2.HelloRequest(name="you an"))
@@ -37,5 +49,5 @@ def run():
 
 
 if __name__ == "__main__":
-    #logging.basicConfig()
+    # logging.basicConfig()
     run()

@@ -20,25 +20,31 @@ def send_email(data):
     password = str(os.environ["PASS"])  
 
     message = MIMEMultipart("alternative")
-    message["Subject"] = "multipart test. 15th test"
+    message["Subject"] = data["account"]
     message["From"] = username
     message["To"] = to
 
-    text = """\
+    text = f"""\
     Hi,
-    How are you? 7th test
-    Real Python has many great tutorials:
-    www.realpython.com"""
+    
+    Here's a resume for your account balance
+
+    Total balance is {data["total"]}
+    Average debit amount: {data["debit"]}
+    Average credit amount: {data["credit"]}
+    {months_msg}"""
+
     html = f"""\
     <html>
     <body>
         <p>Hi,<br>
+        <br>
+        Here's a resume for your account balance<br>
+        <br>
         Total balance is {data["total"]}<br>
         Average debit amount: {data["debit"]}<br>
         Average credit amount: {data["credit"]}<br>
         {months_msg}
-        <a href="http://www.realpython.com">Real Python</a> 
-        has many great tutorials.
         </p>
     </body>
     </html>

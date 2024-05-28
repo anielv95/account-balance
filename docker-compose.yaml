@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  email: 
+    image: email:latest
+  gateway: 
+    image: processing:latest 
+    environment:
+      - EMAIL_HOST=email:50051 
+    ports: 
+      - "3000:3000"

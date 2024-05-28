@@ -1,3 +1,6 @@
 pandas
 flask
 gunicorn
+grpcio
+grpcio-tools
+protobuf

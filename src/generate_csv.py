@@ -5,7 +5,7 @@ import random
 import numpy as np
 
 account = str(uuid.uuid4())
-email = "anielvillegas@gmail.com"
+email = "aniel.villegas@yahoo.com"
 # initial_date = datetime.datetime.strptime("2024-02-17","%Y-%m-%d")
 
 random.seed(42)

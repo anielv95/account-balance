@@ -5,8 +5,9 @@ name = "pypi"
 
 [packages]
 python-dotenv = "*"
-flask = "*"
-gunicorn = "*"
+grpcio = "*"
+grpcio-tools = "*"
+protobuf = "*"
 
 [dev-packages]
 

@@ -7,32 +7,33 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
 from google.protobuf import symbol_database as _symbol_database
 from google.protobuf.internal import builder as _builder
+
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-
-
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0b\x65mail.proto\x12\x05\x65mail\"h\n\x0cHelloRequest\x12+\n\x04\x64\x61ta\x18\x01 \x03(\x0b\x32\x1d.email.HelloRequest.DataEntry\x1a+\n\tDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"j\n\nHelloReply\x12-\n\x06output\x18\x01 \x03(\x0b\x32\x1d.email.HelloReply.OutputEntry\x1a-\n\x0bOutputEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x32?\n\x07Greeter\x12\x34\n\x08SayHello\x12\x13.email.HelloRequest\x1a\x11.email.HelloReply\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(
+    b'\n\x0b\x65mail.proto\x12\x05\x65mail"h\n\x0cHelloRequest\x12+\n\x04\x64\x61ta\x18\x01 \x03(\x0b\x32\x1d.email.HelloRequest.DataEntry\x1a+\n\tDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01"j\n\nHelloReply\x12-\n\x06output\x18\x01 \x03(\x0b\x32\x1d.email.HelloReply.OutputEntry\x1a-\n\x0bOutputEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x32?\n\x07Greeter\x12\x34\n\x08SayHello\x12\x13.email.HelloRequest\x1a\x11.email.HelloReply"\x00\x62\x06proto3'
+)
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'email_pb2', _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, "email_pb2", _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  DESCRIPTOR._loaded_options = None
-  _globals['_HELLOREQUEST_DATAENTRY']._loaded_options = None
-  _globals['_HELLOREQUEST_DATAENTRY']._serialized_options = b'8\001'
-  _globals['_HELLOREPLY_OUTPUTENTRY']._loaded_options = None
-  _globals['_HELLOREPLY_OUTPUTENTRY']._serialized_options = b'8\001'
-  _globals['_HELLOREQUEST']._serialized_start=22
-  _globals['_HELLOREQUEST']._serialized_end=126
-  _globals['_HELLOREQUEST_DATAENTRY']._serialized_start=83
-  _globals['_HELLOREQUEST_DATAENTRY']._serialized_end=126
-  _globals['_HELLOREPLY']._serialized_start=128
-  _globals['_HELLOREPLY']._serialized_end=234
-  _globals['_HELLOREPLY_OUTPUTENTRY']._serialized_start=189
-  _globals['_HELLOREPLY_OUTPUTENTRY']._serialized_end=234
-  _globals['_GREETER']._serialized_start=236
-  _globals['_GREETER']._serialized_end=299
+    DESCRIPTOR._loaded_options = None
+    _globals["_HELLOREQUEST_DATAENTRY"]._loaded_options = None
+    _globals["_HELLOREQUEST_DATAENTRY"]._serialized_options = b"8\001"
+    _globals["_HELLOREPLY_OUTPUTENTRY"]._loaded_options = None
+    _globals["_HELLOREPLY_OUTPUTENTRY"]._serialized_options = b"8\001"
+    _globals["_HELLOREQUEST"]._serialized_start = 22
+    _globals["_HELLOREQUEST"]._serialized_end = 126
+    _globals["_HELLOREQUEST_DATAENTRY"]._serialized_start = 83
+    _globals["_HELLOREQUEST_DATAENTRY"]._serialized_end = 126
+    _globals["_HELLOREPLY"]._serialized_start = 128
+    _globals["_HELLOREPLY"]._serialized_end = 234
+    _globals["_HELLOREPLY_OUTPUTENTRY"]._serialized_start = 189
+    _globals["_HELLOREPLY_OUTPUTENTRY"]._serialized_end = 234
+    _globals["_GREETER"]._serialized_start = 236
+    _globals["_GREETER"]._serialized_end = 299
 # @@protoc_insertion_point(module_scope)

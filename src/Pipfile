@@ -7,6 +7,9 @@ name = "pypi"
 pandas = "*"
 flask = "*"
 gunicorn = "*"
+grpcio = "*"
+grpcio-tools = "*"
+protobuf = "*"
 
 [dev-packages]
 
