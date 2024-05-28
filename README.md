@@ -9,15 +9,15 @@ The following are the steps to send the email.
 
 In your folder execute 
 
-git clone https://github.com/anielv95/account-balance.git
+    1. git clone https://github.com/anielv95/account-balance.git
 
 2. Go inside the repository folder and execute:
 
-cd account-balance
+    1. cd account-balance
 
 3. Create a virtual environment.
 
-python -m venv .account-balance
+    1. python -m venv .account-balance
 
 4. Build the containers.
 
@@ -39,17 +39,17 @@ Execute:
 
 For windows users:
 
-.account-balance/Scripts/Activate
+    1. .account-balance/Scripts/Activate
 
 For linux users:
 
-source .account-balance/bin/activate
+    1. source .account-balance/bin/activate
 
 7. Install dependencies to test the functionalities:
 
-pip install -r requirements.txt
+    1. pip install -r requirements.txt
 
 8. Test the functionalities:
 
-python src/test-endpoint.py
+    1. python src/test-endpoint.py
 
