@@ -13,7 +13,7 @@ account, email = f.get_email(files[0])
 
 customer = {"account": account, "email": email, "df": df}
 
-url = "http://localhost:3000/processing"
+url = "http://localhost:3002/processing"
 
 response = requests.post(url, json=customer, timeout=30).json()
 print(response)

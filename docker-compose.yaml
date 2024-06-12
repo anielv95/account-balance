@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   email: 
-    image: email:latest
+    image: email-v02:v02
   gateway: 
     image: processing:latest 
     environment:

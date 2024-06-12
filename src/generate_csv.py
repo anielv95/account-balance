@@ -8,7 +8,7 @@ account = str(uuid.uuid4())
 email = "aniel.villegas@yahoo.com"
 # initial_date = datetime.datetime.strptime("2024-02-17","%Y-%m-%d")
 
-random.seed(42)
+random.seed(84)
 
 # number of records in csv file
 entries = round(100 * random.random())
